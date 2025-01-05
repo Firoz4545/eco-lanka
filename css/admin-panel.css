@@ -1,0 +1,144 @@
+Global Styling body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7f9;
+}
+
+/* Admin Container */
+.admin-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 250px;
+  background-color: #1c1c1c;
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-header h2 {
+  margin: 0;
+  color: #f1f1f1;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 10px 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #495057;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Header Styling */
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Table Container */
+.table-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Table Styling */
+table {
+  width: 90%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+table th {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+table tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+/* Button Styling */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.approve-btn {
+  background-color: #28a745; /* Green color */
+  margin-right: 5px;
+}
+
+.approve-btn:hover {
+  background-color: #218838; /* Darker green */
+}
+
+.reject-btn {
+  background-color: #dc3545; /* Red color */
+}
+
+.reject-btn:hover {
+  background-color: #c82333; /* Darker red */
+}

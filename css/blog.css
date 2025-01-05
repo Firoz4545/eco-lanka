@@ -1,0 +1,284 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  position: fixed;
+  width: 90%;
+  display: flex;
+  background-color: #ffffff;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1vw 8vw;
+  align-items: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(5px);
+  z-index: 999;
+}
+header img {
+  width: 130px;
+  cursor: pointer;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 150px;
+}
+
+header nav ul li {
+  list-style: none;
+  margin-left: 40px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: rgb(77, 201, 66);
+}
+
+main {
+  display: flex;
+
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.content-wrapper {
+  flex: 2;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+/* .content-wrapper .featured-posts {
+  display: flex;
+}
+
+.content-wrapper .recent-posts {
+  display: flex;
+} */
+section {
+  margin-top: 85px;
+  margin-bottom: 30px;
+}
+
+section h2,
+aside h2 {
+  margin-top: 85px;
+  border-bottom: 2px solid #2e7d32;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.post {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.post img {
+  max-width: 80%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.post h3 {
+  margin: 0 0 10px 0;
+}
+
+.post p {
+  margin: 5px 0 15px 0;
+}
+
+.post a {
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #2e7d32;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.post a:hover {
+  background-color: #2e7d32;
+  color: white;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination a {
+  color: #2e7d32;
+  text-decoration: none;
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: 1px solid #2e7d32;
+  border-radius: 5px;
+}
+
+.pagination a:hover {
+  background-color: #2e7d32;
+  color: white;
+}
+
+.search-bar {
+  margin-top: 85px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.search-bar input {
+  padding: 5px;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 80px;
+}
+
+.search-bar button {
+  padding: 5px 10px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.categories ul {
+  list-style: none;
+  padding: 0;
+}
+
+.categories ul li {
+  margin: 10px 0;
+}
+
+.categories ul li a {
+  color: #2e7d32;
+  text-decoration: none;
+}
+
+.categories ul li a:hover {
+  text-decoration: underline;
+}
+
+.subscription-box {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.subscription-box input {
+  padding: 10px;
+  width: calc(100% - 22px);
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.subscription-box button {
+  padding: 10px 20px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.footer {
+  background: #07320b no-repeat;
+  padding: 3vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer .footer-col {
+  padding-bottom: 40px;
+}
+
+.footer h3 {
+  color: white;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.footer li {
+  list-style: none;
+  color: #7b838a;
+  padding: 10px 0;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.footer li:hover {
+  color: white;
+}
+
+.footer p {
+  color: #7b838a;
+}
+
+.footer .subcribe {
+  margin-top: 20px;
+}
+
+.footer input {
+  width: 220px;
+  padding: 15px 12px;
+  background: #ccd7e3;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.footer .subcribe a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 15px 20px;
+  background-color: #ffffff;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.footer .subcribe a.red {
+  color: white;
+  background: #8e0a0a;
+  transition: 0.4s ease;
+}
+.footer .subcribe a.red:hover {
+  color: white;
+  background: rgb(14, 165, 32);
+}

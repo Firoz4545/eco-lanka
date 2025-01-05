@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url("images/background.jpg") no-repeat center center fixed; /* Background image */
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 400px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Bottom Text Links */
+.bottom-text {
+  margin-top: 20px;
+}
+
+.bottom-text a {
+  color: #4caf50;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.bottom-text a:hover {
+  text-decoration: underline;
+}
